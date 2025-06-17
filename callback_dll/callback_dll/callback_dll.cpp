@@ -9,19 +9,19 @@
 static CallbackFunction g_callback = nullptr;
 
 extern "C" {
-				CALLBACKDLL_API void RegisterCallback(CallbackFunction cb) {
-					g_callback = cb;
-					std::cout << "Callback registered!\n";
-				}
+		CALLBACKDLL_API void RegisterCallback(CallbackFunction cb) {
+			g_callback = cb;
+			std::cout << "Callback registered!\n";
+		}
 
-				CALLBACKDLL_API void TriggerCallback() {
-					if (g_callback) {
-						std::cout << "Triggering callback...\n";
-						g_callback();  // Call the registered function
-					}
-					else {
-						std::cout << "No callback registered.\n";
-					}
-				}
+		CALLBACKDLL_API void TriggerCallback() {
+			if (g_callback) {
+				std::cout << "Triggering callback...\n";
+				g_callback();  // Call the registered function
 			}
+			else {
+				std::cout << "No callback registered.\n";
+			}
+		}
+	  }
 
