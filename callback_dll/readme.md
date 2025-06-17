@@ -1,1 +1,1 @@
-Creating a C++ DLL for registering and throwing a callback
+Creating and testing a C++ DLL for registering and throwing a callback
