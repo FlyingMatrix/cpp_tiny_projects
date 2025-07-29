@@ -1,2 +1,2 @@
-# c_plus_plus_tiny_projects
+# cpp_tiny_projects
 Various C++ tiny projects
